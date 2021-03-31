@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1652.637733829164" y="80.0">Elements.MusicGenre</node>
+    <node x="1404.5" y="660.0">Commands.CommandExecution</node>
+    <node x="1030.5" y="430.0">Commands.CommandClear</node>
+    <node x="2562.5" y="430.0">Commands.CommandRemoveLower</node>
+    <node x="1476.637733829164" y="0.0">Elements.Country</node>
+    <node x="1194.5" y="430.0">Commands.CommandCountByAlbumsCount</node>
+    <node x="1890.5" y="430.0">Commands.CommandExit</node>
+    <node x="1536.637733829164" y="80.0">Elements.Person</node>
+    <node x="1600.637733829164" y="0.0">Elements.Color</node>
+    <node x="770.5" y="430.0">Commands.CommandGroupCountingById</node>
+    <node x="1462.5" y="430.0">Commands.CommandCountGreaterThanAlbumsCountAlbumsCount</node>
+    <node x="1518.5225659229209" y="170.0">Elements.MusicBand</node>
+    <node x="2202.5" y="430.0">Commands.CommandInfo</node>
+    <node x="169.5" y="430.0">Commands.CommandUpdateId</node>
+    <node x="21.5" y="430.0">Commands.CommandAdd</node>
+    <node x="2358.5" y="430.0">Commands.CommandRemoveById</node>
+    <node x="2046.5" y="430.0">Commands.CommandHelp</node>
+    <node x="2930.5" y="430.0">Commands.CommandShow</node>
+    <node x="2774.5" y="430.0">Commands.CommandSave</node>
+    <node x="264.0" y="510.0">Commands.CommandAddIfMin</node>
+    <node x="590.5" y="430.0">Commands.CommandHistory</node>
+    <node x="452.0" y="510.0">Commands.CommandExecuteScript</node>
+    <node x="1611.1932893847197" y="250.0">Commands.Command</node>
+    <node x="1452.5" y="740.0">Main</node>
+    <node x="1380.637733829164" y="80.0">Elements.Coordinates</node>
+    <node x="74.75" y="250.0">Manager.Manager</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Commands.CommandRemoveById" target="Commands.Command">
+      <point x="0.0" y="-15.0" />
+      <point x="2450.5" y="370.0" />
+      <point x="1687.6638776200139" y="370.0" />
+      <point x="24.470588235294144" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExit" target="Commands.Command">
+      <point x="0.0" y="-15.0" />
+      <point x="1958.5" y="400.0" />
+      <point x="1669.3109364435431" y="400.0" />
+      <point x="6.117647058823422" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandGroupCountingById" target="Commands.Command">
+      <point x="0.0" y="-15.0" />
+      <point x="890.5" y="390.0" />
+      <point x="1644.840348208249" y="390.0" />
+      <point x="-18.352941176470495" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecuteScript" target="Commands.Command">
+      <point x="0.0" y="-15.0" />
+      <point x="556.0" y="370.0" />
+      <point x="1632.6050540906022" y="370.0" />
+      <point x="-30.588235294117567" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandAdd">
+      <point x="-83.11111111111109" y="-15.0" />
+      <point x="1409.388888888889" y="640.0" />
+      <point x="53.5" y="640.0" />
+      <point x="-32.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandCountGreaterThanAlbumsCountAlbumsCount" target="Commands.Command">
+      <point x="0.0" y="-15.0" />
+      <point x="1666.5" y="410.0" />
+      <point x="1663.1932893847197" y="410.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandShow" target="Commands.Command">
+      <point x="0.0" y="-15.0" />
+      <point x="2998.5" y="340.0" />
+      <point x="1706.0168187964841" y="340.0" />
+      <point x="42.82352941176464" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandInfo" target="Commands.Command">
+      <point x="0.0" y="-15.0" />
+      <point x="2270.5" y="380.0" />
+      <point x="1681.54623056119" y="380.0" />
+      <point x="18.352941176470495" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandRemoveById">
+      <point x="44.0" y="-15.0" />
+      <point x="1536.5" y="600.0" />
+      <point x="2450.5" y="600.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Elements.MusicBand" target="Elements.Person">
+      <point x="-10.0" y="-15.0" />
+      <point x="1568.5225659229209" y="150.0" />
+      <point x="1560.637733829164" y="150.0" />
+      <point x="-24.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandAddIfMin">
+      <point x="-63.55555555555543" y="-15.0" />
+      <point x="1428.9444444444446" y="620.0" />
+      <point x="348.0" y="620.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Elements.MusicBand" target="Elements.Coordinates">
+      <point x="-50.0" y="-15.0" />
+      <point x="1528.5225659229209" y="150.0" />
+      <point x="1414.637733829164" y="150.0" />
+      <point x="-34.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecuteScript" target="Commands.CommandExecution">
+      <point x="52.0" y="15.0" />
+      <point x="608.0" y="600.0" />
+      <point x="1448.5" y="600.0" />
+      <point x="-44.0" y="-15.0" />
+    </edge>
+    <edge source="Elements.Person" target="Elements.Color">
+      <point x="12.0" y="-15.0" />
+      <point x="1596.637733829164" y="50.0" />
+      <point x="1622.637733829164" y="50.0" />
+      <point x="-22.0" y="15.0" />
+    </edge>
+    <edge source="Main" target="Manager.Manager">
+      <point x="-16.0" y="-15.0" />
+      <point x="1476.5" y="710.0" />
+      <point x="11.0" y="710.0" />
+      <point x="11.0" y="310.0" />
+      <point x="100.75" y="310.0" />
+      <point x="-26.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandUpdateId">
+      <point x="-73.33333333333326" y="-15.0" />
+      <point x="1419.1666666666667" y="630.0" />
+      <point x="253.5" y="630.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandAdd" target="Manager.Manager">
+      <point x="-42.666666666666515" y="-15.0" />
+      <point x="42.833333333333485" y="320.0" />
+      <point x="118.08333333333348" y="320.0" />
+      <point x="-8.666666666666515" y="15.0" />
+    </edge>
+    <edge source="Main" target="Elements.MusicBand">
+      <point x="32.0" y="-15.0" />
+      <point x="1524.5" y="720.0" />
+      <point x="3100.279411764706" y="720.0" />
+      <point x="3100.279411764706" y="220.0" />
+      <point x="1623.5225659229209" y="220.0" />
+      <point x="45.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandUpdateId" target="Commands.Command">
+      <point x="56.0" y="-15.0" />
+      <point x="309.5" y="350.0" />
+      <point x="1620.3697599729549" y="350.0" />
+      <point x="-42.82352941176464" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandCountByAlbumsCount" target="Commands.Command">
+      <point x="0.0" y="-15.0" />
+      <point x="1318.5" y="410.0" />
+      <point x="1657.0756423258963" y="410.0" />
+      <point x="-6.117647058823422" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandHelp" target="Commands.Command">
+      <point x="0.0" y="-15.0" />
+      <point x="2114.5" y="390.0" />
+      <point x="1675.4285835023666" y="390.0" />
+      <point x="12.235294117647072" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandUpdateId" target="Manager.Manager">
+      <point x="-56.0" y="-15.0" />
+      <point x="197.5" y="330.0" />
+      <point x="152.75" y="330.0" />
+      <point x="26.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandInfo">
+      <point x="34.22222222222217" y="-15.0" />
+      <point x="1526.7222222222222" y="590.0" />
+      <point x="2270.5" y="590.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandRemoveLower">
+      <point x="53.77777777777783" y="-15.0" />
+      <point x="1546.2777777777778" y="610.0" />
+      <point x="2658.5" y="610.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Manager.Manager" target="Elements.MusicBand">
+      <point x="-26.0" y="-15.0" />
+      <point x="100.75" y="220.0" />
+      <point x="1533.5225659229209" y="220.0" />
+      <point x="-45.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandAdd" target="Commands.Command">
+      <point x="42.666666666666515" y="-15.0" />
+      <point x="128.16666666666652" y="340.0" />
+      <point x="1614.2521129141314" y="340.0" />
+      <point x="-48.94117647058829" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.Command">
+      <point x="83.11111111111109" y="-15.0" />
+      <point x="1575.611111111111" y="640.0" />
+      <point x="3077.0" y="640.0" />
+      <point x="3077.0" y="330.0" />
+      <point x="1712.134465855308" y="330.0" />
+      <point x="48.94117647058829" y="15.0" />
+    </edge>
+    <edge source="Main" target="Commands.CommandExecution">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandHistory" target="Commands.Command">
+      <point x="0.0" y="-15.0" />
+      <point x="670.5" y="380.0" />
+      <point x="1638.7227011494256" y="380.0" />
+      <point x="-24.470588235294144" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandClear">
+      <point x="-14.666666666666742" y="-15.0" />
+      <point x="1477.8333333333333" y="570.0" />
+      <point x="1102.5" y="570.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandClear" target="Commands.Command">
+      <point x="0.0" y="-15.0" />
+      <point x="1102.5" y="400.0" />
+      <point x="1650.9579952670724" y="400.0" />
+      <point x="-12.235294117647072" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandSave">
+      <point x="63.55555555555566" y="-15.0" />
+      <point x="1556.0555555555557" y="620.0" />
+      <point x="2842.5" y="620.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandShow">
+      <point x="73.33333333333326" y="-15.0" />
+      <point x="1565.8333333333333" y="630.0" />
+      <point x="2998.5" y="630.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandGroupCountingById">
+      <point x="-24.444444444444343" y="-15.0" />
+      <point x="1468.0555555555557" y="580.0" />
+      <point x="890.5" y="580.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandCountGreaterThanAlbumsCountAlbumsCount">
+      <point x="4.888888888888914" y="-15.0" />
+      <point x="1497.388888888889" y="560.0" />
+      <point x="1666.5" y="560.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandAddIfMin" target="Commands.Command">
+      <point x="42.0" y="-15.0" />
+      <point x="390.0" y="360.0" />
+      <point x="1626.4874070317783" y="360.0" />
+      <point x="-36.70588235294122" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandCountByAlbumsCount">
+      <point x="-4.888888888888914" y="-15.0" />
+      <point x="1487.611111111111" y="560.0" />
+      <point x="1318.5" y="560.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Elements.Person" target="Elements.Country">
+      <point x="-36.0" y="-15.0" />
+      <point x="1548.637733829164" y="60.0" />
+      <point x="1502.637733829164" y="60.0" />
+      <point x="-26.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandExit">
+      <point x="14.666666666666742" y="-15.0" />
+      <point x="1507.1666666666667" y="570.0" />
+      <point x="1958.5" y="570.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandRemoveLower" target="Commands.Command">
+      <point x="0.0" y="-15.0" />
+      <point x="2658.5" y="360.0" />
+      <point x="1693.7815246788373" y="360.0" />
+      <point x="30.588235294117567" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandHelp">
+      <point x="24.444444444444343" y="-15.0" />
+      <point x="1516.9444444444443" y="580.0" />
+      <point x="2114.5" y="580.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Elements.MusicBand" target="Elements.MusicGenre">
+      <point x="30.0" y="-15.0" />
+      <point x="1608.5225659229209" y="140.0" />
+      <point x="1684.637733829164" y="140.0" />
+      <point x="-32.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandAddIfMin" target="Commands.CommandAdd">
+      <point x="-42.0" y="-15.0" />
+      <point x="306.0" y="485.0" />
+      <point x="117.5" y="485.0" />
+      <point x="32.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandHistory">
+      <point x="-34.22222222222217" y="-15.0" />
+      <point x="1458.2777777777778" y="590.0" />
+      <point x="670.5" y="590.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandExecution" target="Commands.CommandExecuteScript">
+      <point x="-53.77777777777783" y="-15.0" />
+      <point x="1438.7222222222222" y="610.0" />
+      <point x="504.0" y="610.0" />
+      <point x="-52.0" y="15.0" />
+    </edge>
+    <edge source="Commands.CommandSave" target="Commands.Command">
+      <point x="0.0" y="-15.0" />
+      <point x="2842.5" y="350.0" />
+      <point x="1699.8991717376607" y="350.0" />
+      <point x="36.70588235294122" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="1604.0" y="216.0" />
+  <SelectedNodes>
+    <node>Commands.Command</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
