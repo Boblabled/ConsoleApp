@@ -1,5 +1,7 @@
 package Commands;
 
+import Elements.MusicBand;
+
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 
@@ -13,13 +15,13 @@ public class CommandRemoveById extends Command{
      * @param command - команда которую вводят с консоли
      * @param collection - коллекция
      */
-    public static void action(String command, LinkedHashSet collection){
-        String fields[];
-        Object arr[];
-        Boolean work;
+    public static void action(String command, LinkedHashSet<MusicBand> collection){
+        String[] fields;
+        Object[] arr;
+        boolean work;
         work = false;
         int index;
-        String id[];
+        String[] id;
         fields = command.split(" ");
         if (fields.length == 2){
             arr = collection.toArray();

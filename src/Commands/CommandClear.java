@@ -1,5 +1,7 @@
 package Commands;
 
+import Elements.MusicBand;
+
 import java.util.LinkedHashSet;
 
 /**
@@ -11,7 +13,7 @@ public class CommandClear extends Command{
      *
      * @param collection - коллекция
      */
-    public static void action(LinkedHashSet collection){
+    public static void action(LinkedHashSet<MusicBand> collection){
         collection.clear();
         System.out.println("\nКоллекция успешно очищена\n");
     }

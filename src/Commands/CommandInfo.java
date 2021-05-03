@@ -1,5 +1,7 @@
 package Commands;
 
+import Elements.MusicBand;
+
 import java.time.LocalDateTime;
 import java.util.LinkedHashSet;
 
@@ -13,7 +15,7 @@ public class CommandInfo extends Command{
      * @param collection - коллекция
      * @param time - время создания коллекции
      */
-    public static void action(LinkedHashSet collection, LocalDateTime time){
+    public static void action(LinkedHashSet<MusicBand> collection, LocalDateTime time){
         System.out.println("\nТип коллекции: java.util.LinkedHashSet");
         System.out.println("Дата создания: " + time);
         System.out.println("Структура элемента: {id, name, coordinates.x, coordinates.y, creationDate, " +

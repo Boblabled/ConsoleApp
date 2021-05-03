@@ -1,5 +1,7 @@
 package Commands;
 
+import Elements.MusicBand;
+
 import java.io.*;
 import java.time.LocalDateTime;
 import java.util.LinkedHashSet;
@@ -17,10 +19,10 @@ public class CommandExecuteScript extends Command{
      * @param file - файл в котором храниться коллекция
      * @param time - текущее время
      */
-    public static void action(LinkedHashSet collection, String line, String command, String file, LocalDateTime time){
+    public static void action(LinkedHashSet<MusicBand> collection, String line, String command, String file, LocalDateTime time){
         //execute_script commands.txt
         String temp = System.getenv().get("MusicBandPATH");
-        String fields[];
+        String[] fields;
         fields = line.split(" ");
         int index;
         String InPut;
@@ -51,7 +53,7 @@ public class CommandExecuteScript extends Command{
                     e.printStackTrace();
                 }
                 if (newLine == null) break;
-                String newCommand[];
+                String[] newCommand;
                 newCommand = newLine.split(" ");
                 CommandExecution.action(collection, newLine, newCommand[0], file, time);
             }

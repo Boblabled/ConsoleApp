@@ -1,5 +1,7 @@
 package Commands;
 
+import Elements.MusicBand;
+
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -15,8 +17,8 @@ public class CommandSave extends Command{
      * @param file - файл где храниться коллекция
      * @param collection - коллекция
      */
-    public static void action(String file, LinkedHashSet collection){
-        Object text[];
+    public static void action(String file, LinkedHashSet<MusicBand> collection){
+        Object[] text;
         text = collection.toArray();
         int index;
         try(FileOutputStream out=new FileOutputStream(file);

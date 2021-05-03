@@ -1,5 +1,7 @@
 package Commands;
 
+import Elements.MusicBand;
+
 import java.util.LinkedHashSet;
 
 /**
@@ -11,7 +13,7 @@ public class CommandGroupCountingById extends Command{
      *
      * @param collection - коллекция
      */
-    public static void action(LinkedHashSet collection){
+    public static void action(LinkedHashSet<MusicBand> collection){
         String[] fields;
         Object[] arr;
         int index;

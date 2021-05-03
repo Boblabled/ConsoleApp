@@ -1,5 +1,6 @@
 package Commands;
 
+import Elements.MusicBand;
 import Manager.Manager;
 import java.util.LinkedHashSet;
 
@@ -13,12 +14,16 @@ public class CommandUpdateId extends Command{
      * @param command - команда которую вводят с консоли
      * @param collection - коллекция
      */
-    public static void action(String command, LinkedHashSet collection){
+    public static void action(String command, LinkedHashSet<MusicBand> collection){
         Manager manager = new Manager();
         String element = "";
-        String field[];
+        String[] field;
+        Object[] arr;
+        boolean work;
+        work = false;
         int index;
         field = command.split(" ");
+        arr = collection.toArray();
         if (field.length == 1){
             System.err.println("\nЭлемент отсутствует\n");
         } else  if (field.length >= 2){
@@ -29,11 +34,15 @@ public class CommandUpdateId extends Command{
                 }
             }
         } else element = field[1];
-
-        if (collection.contains(element)){
-            collection.remove(element);
-            collection.add(manager.idUpdate(element));
-            System.out.println("\nid успешно обновлён\n");
-        } else System.out.println("\nТакого элемента не существует\n");
+        for (index = 0; index<collection.size(); index++) {
+            if (manager.set(element).toString().equals(arr[index].toString())) {
+                collection.remove((arr[index]));
+                collection.add(manager.idUpdate(element));
+                System.out.println("\nid успешно обновлён\n");
+                work = true;
+                break;
+            }
+        }
+        if (!work) System.out.println("\nТакого элемента не существует\n");
     }
 }

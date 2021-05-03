@@ -1,5 +1,7 @@
 package Commands;
 
+import Elements.MusicBand;
+
 import java.util.LinkedHashSet;
 
 /**
@@ -12,7 +14,7 @@ public class CommandAddIfMin extends Command{
      * @param command - строка котрую вводят с консоли
      * @param collection - коллекция
      */
-    public static void action(String command, LinkedHashSet collection){
+    public static void action(String command, LinkedHashSet<MusicBand> collection){
         String[] field;
         Object[] arr;
         String element;

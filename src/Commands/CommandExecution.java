@@ -1,5 +1,7 @@
 package Commands;
 
+import Elements.MusicBand;
+
 import java.time.LocalDateTime;
 import java.util.LinkedHashSet;
 
@@ -16,7 +18,7 @@ public class CommandExecution extends Command{
      * @param file - файл в котором храниться коллекция
      * @param time - текущее время
      */
-    public static void action(LinkedHashSet collection, String line, String command, String file, LocalDateTime time){
+    public static void action(LinkedHashSet<MusicBand> collection, String line, String command, String file, LocalDateTime time){
         if (line.equals("help")){
             CommandHelp.action();
             CommandHistory.save(command);

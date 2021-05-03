@@ -1,23 +1,21 @@
 import Commands.*;
 import Elements.MusicBand;
 import Manager.Manager;
-import java.io.*;
+
 import java.time.LocalDateTime;
 import java.util.LinkedHashSet;
 import java.util.Scanner;
 
-
 public class Main {
     private static final Scanner in = new Scanner(System.in);
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         String temp = System.getenv().get("MusicBandPATH");
-        MusicBand musicband = new MusicBand();
         Manager manager = new Manager();
+        LinkedHashSet<MusicBand> collection = new LinkedHashSet<MusicBand>();
         LocalDateTime today = LocalDateTime.now();
         String file;
         file = temp + "MusicBand.csv";
-        LinkedHashSet collection = new LinkedHashSet<>();
-        manager.fill(file, collection, musicband);
+        manager.fill(file, collection);
         System.out.println("\nhelp : вывести справку по доступным командам\n");
 
         while (true){

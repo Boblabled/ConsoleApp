@@ -15,9 +15,8 @@ public class Manager {
      *
      * @param InPut - входный файл
      * @param collection - коллекция
-     * @param musicband - формат элемента коллекции
      */
-    public void fill(String InPut, LinkedHashSet collection, MusicBand musicband) {
+    public void fill(String InPut, LinkedHashSet<MusicBand> collection) {
         File file = new File(InPut);
         FileInputStream fis = null;
 
@@ -30,11 +29,11 @@ public class Manager {
 
         InputStreamReader isr = new InputStreamReader(fis);
         BufferedReader br = new BufferedReader(isr);
-        String fields[];
+        String[] fields;
         String element = null;
         int index;
         while (true) {
-
+            MusicBand musicband = new MusicBand();
             try {
                 element = br.readLine();
             } catch (IOException e) {
@@ -58,7 +57,7 @@ public class Manager {
             musicband.setEstablishmentDate(fields[7]);
             musicband.setGenre(fields[8]);
             musicband.setFrontMan(fields[9], fields[10], fields[11], fields[12], fields[13]);
-            collection.add(element);
+            collection.add(musicband);
         }
     }
 
@@ -68,7 +67,7 @@ public class Manager {
      * @param element - элемент который вводят с консоли
      * @param collection - коллекция
      */
-    public void add (String element, LinkedHashSet collection){
+    public void add (String element, LinkedHashSet<MusicBand> collection){
         MusicBand musicband = new MusicBand();
         LocalDateTime today = LocalDateTime.now();
         String[] fields;
@@ -92,11 +91,7 @@ public class Manager {
             musicband.setGenre(fields[6]);
             musicband.setFrontMan(fields[7], fields[8], fields[9], fields[10], fields[11]);
 
-            element = id + "," + fields[0] + "," + fields[1] + "," + fields[2] + "," + today.toString();
-            for (index = 3; index < fields.length; index++) {
-                element = element + "," + fields[index];
-            }
-            collection.add(element);
+            collection.add(musicband);
             System.out.println("\nЭлемент добавлен в коллекцию\n");
         } else {
             System.out.println("\nНеверный формат элемента\n");
@@ -109,20 +104,41 @@ public class Manager {
      * @param element - исходный элемент коллекции
      * @return - элемент с обновлённым id
      */
-    public String idUpdate (String element){
-        String fields[];
+    public MusicBand idUpdate (String element){
+        MusicBand musicband = new MusicBand();
+        String[] fields;
         String id;
-        int index;
         fields = element.split(",");
         id = String.valueOf(Math.round(Math.random() * 1000000 + 1));
         while(fields[0] == id){
             id = String.valueOf(Math.round(Math.random() * 1000000 + 1));
         }
         fields[0] = id;
-        element = fields[0];
-        for (index = 1; index < fields.length; index++) {
-            element = element + "," + fields[index];
-        }
-        return (element);
+        musicband.setId(fields[0]);
+        musicband.setName(fields[1]);
+        musicband.setCoordinates(fields[2], fields[3]);
+        musicband.setCreationDate(fields[4]);
+        musicband.setNumberOfParticipants(fields[5]);
+        musicband.setAlbumsCount(fields[6]);
+        musicband.setEstablishmentDate(fields[7]);
+        musicband.setGenre(fields[8]);
+        musicband.setFrontMan(fields[9], fields[10], fields[11], fields[12], fields[13]);
+        return (musicband);
+    }
+
+    public MusicBand set(String element){
+        MusicBand musicband = new MusicBand();
+        String[] fields;
+        fields = element.split(",");
+        musicband.setId(fields[0]);
+        musicband.setName(fields[1]);
+        musicband.setCoordinates(fields[2], fields[3]);
+        musicband.setCreationDate(fields[4]);
+        musicband.setNumberOfParticipants(fields[5]);
+        musicband.setAlbumsCount(fields[6]);
+        musicband.setEstablishmentDate(fields[7]);
+        musicband.setGenre(fields[8]);
+        musicband.setFrontMan(fields[9], fields[10], fields[11], fields[12], fields[13]);
+        return (musicband);
     }
 }

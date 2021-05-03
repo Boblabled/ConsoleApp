@@ -4,7 +4,7 @@ package Commands;
  * Класс который хранит и выводит 12 последних команд
  */
 public class CommandHistory extends Command{
-    public static String[] strorage = new String[12];
+    public static String[] storage = new String[12];
     public static int Index;
 
     /**
@@ -14,7 +14,7 @@ public class CommandHistory extends Command{
         int i;
         System.out.println("\nПоследние 12 команд:");
         for (i = 0; i<Index; i++){
-            System.out.println(strorage[i]);
+            System.out.println(storage[i]);
         }
         System.out.println("\n");
     }
@@ -25,15 +25,15 @@ public class CommandHistory extends Command{
      * @param command - коммандв которую вводят с консоли
      */
     public static void save(String command){
-        if (Index < strorage.length){
-            strorage[Index] = command;
+        if (Index < storage.length){
+            storage[Index] = command;
             Index++;
         } else{
             int i;
-            for (i = 0; i+1 < strorage.length; i++){
-                strorage[i] = strorage[i+1];
+            for (i = 0; i+1 < storage.length; i++){
+                storage[i] = storage[i+1];
             }
-            strorage[11] = command;
+            storage[11] = command;
         }
     }
 }

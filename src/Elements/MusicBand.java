@@ -145,18 +145,15 @@ public class MusicBand {
             if (genre == null){
                 System.err.println("genre не может быть null");
                 System.exit(0);
+            } else if (genre.equals(MusicGenre.JAZZ.toString())) {
+                this.genre = MusicGenre.JAZZ;
+            } else if (genre.equals(MusicGenre.SOUL.toString())) {
+                this.genre = MusicGenre.SOUL;
+            } else if (genre.equals(MusicGenre.POST_PUNK.toString())) {
+                this.genre = MusicGenre.POST_PUNK;
             } else {
-                if (genre.equals(MusicGenre.JAZZ.toString())) {
-                    this.genre = MusicGenre.JAZZ;
-                }
-
-                if (genre.equals(MusicGenre.SOUL.toString())) {
-                    this.genre = MusicGenre.SOUL;
-                }
-
-                if (genre.equals(MusicGenre.POST_PUNK.toString())) {
-                    this.genre = MusicGenre.POST_PUNK;
-                }
+                System.err.println("genre неверный формат строки!");
+                System.exit(0);
             }
         } catch (NumberFormatException e) {
             System.err.println("genre неверный формат строки!");

@@ -4,8 +4,6 @@ package Commands;
  * Класс команды которая выводит справку по всем командам
  */
 public class CommandHelp extends Command{
-    private String name = "help";
-
     /**
      * Метод который выводит справку по всем командам
      */

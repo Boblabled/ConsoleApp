@@ -55,22 +55,20 @@ public class Person {
      */
     public void setEyeColor(String eyeColor) {
         try {
-            if (eyeColor == null){
+            if (eyeColor == null) {
                 System.err.println("frontMan.eyeColor не может быть null");
                 System.exit(0);
+            } else if (eyeColor.equals(Color.BLACK.toString())) {
+                this.eyeColor = Color.BLACK;
+            } else if (eyeColor.equals(Color.YELLOW.toString())) {
+                this.eyeColor = Color.YELLOW;
+            } else if (eyeColor.equals(Color.ORANGE.toString())) {
+                this.eyeColor = Color.ORANGE;
+            } else if (eyeColor.equals(Color.BROWN.toString())) {
+                this.eyeColor = Color.BROWN;
             } else {
-                if (eyeColor.equals(Color.BLACK.toString())) {
-                    this.eyeColor = Color.BLACK;
-                }
-                if (eyeColor.equals(Color.YELLOW.toString())) {
-                    this.eyeColor = Color.YELLOW;
-                }
-                if (eyeColor.equals(Color.ORANGE.toString())) {
-                    this.eyeColor = Color.ORANGE;
-                }
-                if (eyeColor.equals(Color.BROWN.toString())) {
-                    this.eyeColor = Color.BROWN;
-                }
+                System.err.println("frontMan.eyeColor неверный формат строки!");
+                System.exit(0);
             }
         } catch (NumberFormatException e) {
             System.err.println("frontMan.eyeColor неверный формат строки!");
@@ -88,20 +86,19 @@ public class Person {
             if (hairColor == null) {
                 System.err.println("frontMan.hairColor не может быть null");
                 System.exit(0);
+            } else if (hairColor.equals(Color.BLACK.toString())) {
+                this.hairColor = Color.BLACK;
+            } else if (hairColor.equals(Color.YELLOW.toString())) {
+                this.hairColor = Color.YELLOW;
+            } else if (hairColor.equals(Color.ORANGE.toString())) {
+                this.hairColor = Color.ORANGE;
+            } else if (hairColor.equals(Color.BROWN.toString())) {
+                this.hairColor = Color.BROWN;
             } else {
-                if (hairColor.equals(Color.BLACK.toString())) {
-                    this.hairColor = Color.BLACK;
-                }
-                if (hairColor.equals(Color.YELLOW.toString())) {
-                    this.hairColor = Color.YELLOW;
-                }
-                if (hairColor.equals(Color.ORANGE.toString())) {
-                    this.hairColor = Color.ORANGE;
-                }
-                if (hairColor.equals(Color.BROWN.toString())) {
-                    this.hairColor = Color.BROWN;
-                }
+                System.err.println("frontMan.hairColor неверный формат строки!");
+                System.exit(0);
             }
+
         } catch (NumberFormatException e) {
             System.err.println("frontMan.hairColor неверный формат строки!");
             System.exit(0);
@@ -118,19 +115,17 @@ public class Person {
             if (nationality == null) {
                 System.err.println("frontMan.nationality не может быть null");
                 System.exit(0);
+            } else if (nationality.equals(Country.UNITED_KINGDOM.toString())) {
+                this.nationality = Country.UNITED_KINGDOM;
+            } else if (nationality.equals(Country.USA.toString())) {
+                this.nationality = Country.USA;
+            } else if (nationality.equals(Country.ITALY.toString())) {
+                this.nationality = Country.ITALY;
+            } else if (nationality.equals(Country.JAPAN.toString())) {
+                this.nationality = Country.JAPAN;
             } else {
-                if (nationality.equals(Country.UNITED_KINGDOM.toString())) {
-                    this.nationality = Country.UNITED_KINGDOM;
-                }
-                if (nationality.equals(Country.USA.toString())) {
-                    this.nationality = Country.USA;
-                }
-                if (nationality.equals(Country.ITALY.toString())) {
-                    this.nationality = Country.ITALY;
-                }
-                if (nationality.equals(Country.JAPAN.toString())) {
-                    this.nationality = Country.JAPAN;
-                }
+                System.err.println("frontMan.nationality неверный формат строки!");
+                System.exit(0);
             }
         } catch (NumberFormatException e) {
             System.err.println("frontMan.nationality неверный формат строки!");

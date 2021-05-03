@@ -14,7 +14,7 @@ public class CommandCountByAlbumsCount extends Command{
      * @param command - строка котрую вводят с консоли
      * @param collection - коллекция
      */
-    public static void action(String command, LinkedHashSet collection){
+    public static void action(String command, LinkedHashSet<MusicBand> collection){
         String[] fields;
         Object[] arr;
         boolean work;
